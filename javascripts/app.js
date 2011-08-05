@@ -1,9 +1,6 @@
 $('#download').live('click', function(e){
-  // alert('Downloading...');
-  
   var WIN_INSTALLER = 'http://rubyinstaller.org/downloads/';
   var SRC = 'http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p290.tar.gz';
-  
   if (navigator.userAgent.indexOf("Mac") != -1) {
     window.location = SRC;
   }
@@ -13,5 +10,4 @@ $('#download').live('click', function(e){
   else if (navigator.userAgent.indexOf("Linux") != -1) {
     window.location = SRC;
   }
-  
 });
