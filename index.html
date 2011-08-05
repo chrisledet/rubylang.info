@@ -1,183 +1,51 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
-  <!--
-  // Maintained by the Ruby Community, 
-  // https://github.com/rubylang
-  //
-  // Design by Peng Zhong
-  // http://nylira.com
-  // http://twitter.com/zcpeng
-  -->
-  <title>Ruby Programming Language</title>
-  <meta charset=utf-8 />
-  <link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
-  <!--[if IE 6]><link rel="gstylesheet" type="text/css" href="//universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen, projection" /><![endif]-->
-  <script src='http://code.jquery.com/jquery-1.6.2.min.js' type='text/javascript'></script>
-  <script src='javascripts/app.js' type='text/javascript'></script>
-</head>
+---
+layout: main
+title: "Ruby Programming Language"
+code: true
+---
 
-<body>
+<ul id="posts">
+  <li class="post">
+    <span class="date">
+      <span class="month">Aug</span>
+      <span class="day">5</span>
+    </span>
+    <h3><a href="#">Welcome to RubyLang.info!</a></h3> 
+    <p class="author">Chris Ledet</p>
+    <p>
+      RubyLang.info is a community driven web site, dedicated to 
+      helping both new and experience Ruby developers. We are hosted 
+      on Github.com where anyone can contribute
+      to the site without going through unnecessary barriers. We strive 
+      to be the best resource for the Ruby programming language possible.
+    </p> 
+    <p><a href="#">Continue Reading &#8230;</a></p> 
   
-  <div class="nav main top">
-    <ul class="nav cnt">
-      <li><a href="#">Downloads</a>
-      <li><a href="http://www.ruby-doc.org/">Documentation</a>
-      <li><a href="http://www.rubygems.org">RubyGems</a>
-      <li><a href="#">Community</a>
-      <li><a href="#">News</a>
-      <li><a href="#">Security</a>
-      <li><a href="#">About Ruby</a>
-      <li class="i18n">
-        <form>
-          <select>
-            <option>English</option>
-          </select>
-        </form>
-    </ul>
+  <li><a class="more button small" href="#">More posts &raquo;</a>
+</ul><!--posts-->
+
+<ul class="nav panels">
+  <div class="section heading">
+    <h3>Learn Ruby</h3>
+    <li class="start medium panel"> 
+    <p>at your own pace.</p>
   </div>
+  <li class="start small panel"> 
+    <h4>Get Started</h4> 
+    <ul> 
+      <li><a href="http://tryruby.org/">Try Ruby! (in your browser)</a></li>
+      <li><a href='http://ruby.learncodethehardway.org/'>Free Book: Learn Ruby The Hard Way <em>by Zed Shaw</em>.</a</li>
+      <li><a href="http://yehudakatz.com/2009/08/24/my-10-favorite-things-about-the-ruby-language/">
+        Yehuda Katz's Top favorite things about Ruby.</a></li>
+    </ul> 
   
-  <div id="header" class="cnt">
-    <h1 class="logo"><a href="#">Ruby</a></h1>
-    <p class="subtitle">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
-    <ul class="nav">
-      <li class="download button" id='download' href="#">Download <strong>Ruby 1.9.2</strong><li>
-      <li><a class="learn" href="#">Learn more &raquo;</a>
+  <li class="explore small panel"> 
+    <h4>Explore</h4> 
+    <ul> 
+      <li><a href="http://ruby-doc.org/">Documentation</a> 
+      <li><a href="http://pragprog.com/titles">Books</a> 
+      <li><a href="#">Libraries</a> 
+      <li><a href="#">Success Stories</a>
     </ul>
-    <div id="code">
-      <div class="comment"># Ruby knows what you</div> 
-      <div class="comment"># mean, even if you</div> 
-      <div class="comment"># want to do math on</div> 
-      <div class="comment"># an entire Array</div> 
-      <div>cities&nbsp;&nbsp;<span class="op">=</span> <span class="string">%w[ London</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">Oslo</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">Paris</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">Amsterdam</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">Berlin ]</span></div>
-      <div>visited <span class="op">=</span> <span class="string">%w[Berlin Oslo]</span></div>
-      <div class="blank-line">&nbsp;</div>
-      <div>puts <span class="string">"I still need "</span> <span class="op">+</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"to visit the "</span> <span class="op">+</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"following cities:"</span><span class="op">,</span></div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cities <span class="op">-</span> visited</div>
-    </div><!--code-->
-  </div><!--header-->
    
-  <div id="content" class="cnt">
-    <ul id="posts">
-      <li class="post">
-        <span class="date">
-          <span class="month">Aug</span>
-          <span class="day">5</span>
-        </span>
-        <h3><a href="#">Welcome to RubyLang.info!</a></h3> 
-        <p class="author">Chris Ledet</p>
-        <p>
-          RubyLang.info is a community driven web site, dedicated to 
-          helping both new and experienced Ruby developers. We are hosted 
-          on Github.com where anyone can contribute
-          to the site without going through unnecessary barriers. We strive 
-          to be the best resource for the Ruby programming language possible.
-        </p> 
-        <p><a href="#">Continue Reading &#8230;</a></p> 
-      
-      <li><a class="more button small" href="#">More posts &raquo;</a>
-    </ul><!--posts-->
-    
-    <ul class="nav panels">
-      <div class="section heading">
-        <h3>Learn Ruby</h3>
-        <p>at your own pace.</p>
-      </div>
-      <li class="start small panel"> 
-        <h4>Get Started</h4> 
-        <ul> 
-          <li><a href="#">Try Ruby! (in your browser)</a> 
-          <li><a href="#">Ruby in Twenty Minutes</a> 
-          <li><a href="#">Ruby from Other Languages</a> 
-        </ul> 
-      
-      <li class="explore small panel"> 
-        <h4>Explore</h4> 
-        <ul> 
-          <li><a href="#">Documentation</a> 
-          <li><a href="#">Books</a> 
-          <li><a href="#">Libraries</a> 
-          <li><a href="#">Success Stories</a>
-        </ul>
-       
-    </ul><!--nav panels-->
-    
-  </div><!--content-->
-  
-  <div id="projects-cnt" class="cnt">
-    <h2>Some Top Ruby Projects</h2> 
-    <ul class="projects squares">
-      <li><a href="http://rubygems.org">
-        <span class="title">RubyGems</span>
-        <span class="description">
-          RubyGems is the Ruby standard for publishing and managing 
-          third party libraries.
-        </span>
-      </a>
-      <li><a href="http://rubyonrails.org/">
-        <span class="title">Rails</span>
-        <span class="description">
-          Rails is a web-application framework that includes everything needed to create 
-          database-backed web applications according to the Model-View-Controller (MVC) pattern.
-        </span>
-      </a>
-      <li><a href="http://mxcl.github.com/homebrew/">
-        <span class="title">HomeBrew</span>
-        <span class="description">
-          Homebrew is the easiest and most flexible way to install 
-          the UNIX tools Apple didn't include with OS X.
-        </span>
-      </a>
-      <li><a href="http://jekyllrb.com/">
-        <span class="title">Jekyll</span>
-        <span class="description">
-          Jekyll is a blog-aware, static site generator in Ruby
-        </span>
-      </a>
-      <li><a href="https://joindiaspora.com/">
-        <span class="title">Diaspora</span>
-        <span class="description">
-          The privacy aware, personally controlled, do-it-all, open source social network. and integers.
-        </span>
-      </a>
-
-    </ul><!--projects--> 
-    <a class="button small" href="https://github.com/languages/Ruby">More projects &raquo;</a>
-  </div><!--projects-cnt-->
-  
-  <div class="nav main bot">
-    <ul class="cnt">
-      <li><a href="#">Downloads</a>
-      <li><a href="http://www.ruby-doc.org/">Documentation</a>
-      <li><a href="http://www.rubygems.org">RubyGems</a>
-      <li><a href="#">Community</a>
-      <li><a href="#">News</a>
-      <li><a href="#">Security</a>
-      <li><a href="#">About Ruby</a>
-      <li class="i18n">
-        <form>
-          <select>
-            <option>English</option>
-          </select>
-        </form>
-    </ul>
-  </div>
-  
-  <div id="bottom">
-    <div class="cnt">
-      <p>Ruby is released under the <a href='RUBY-LICENSE.txt'>Ruby License</a> and &copy; 2011 Yukihiro Matsumoto</p>
-      <p>
-        Design was beautifully done by <a href='http://nylira.com'>Peng Zhong</a>.
-        If you would like to contribute to the site in any way, please <a href='https://github.com/rubylang/rubylang.github.com'> 
-        fork us on Github</a>.</p>
-    </div>
-  </div>
-  
-</body>
-</html>
+</ul>
