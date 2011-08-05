@@ -48,6 +48,10 @@
     {{ content }}
   </div>
   
+  {% if page.top %}
+    {% include top.html %}
+  {% endif %}
+  
   <div class="nav main bot">
     <ul class="cnt">
       <li><a href="/downloads.html">Downloads</a>
