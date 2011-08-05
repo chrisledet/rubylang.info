@@ -1,0 +1,356 @@
+@import 'n/all'
+@import 'm/all'
+
+x = 14px
+
+txt = #fff
+
+df()
+  s x
+  lh 1.5
+  ff sans
+  c txt
+
+link = txt
+hover = txt
+
+a
+  c txt
+  fw bold
+  td none
+  &:hover, &:focus
+    c hover
+
+body
+  df()
+  background rgb(120,10,10)
+  background -webkit-gradient(radial, center 200, 0, center 200, 1000, from(rgb(150,40,40)), to(rgb(120,10,10)))
+  background -moz-radial-gradient(center 200px, circle, rgb(150,40,40), rgb(120,10,10)) 
+
+  .cnt
+    cnt()
+
+  strong
+    fw bold
+
+  em
+    font-style italic
+  h1, h2, h3, h4, h5, h6
+    aa()
+
+.nav.main
+  h 48px
+  box-shadow rgba(0,0,0,.15) 0 0 25px
+  &.top
+    background linear-gradient(top, w40, transparent 90%)
+    bb 1px solid rgb(160,60,60)
+
+  &.bot
+    background linear-gradient(top, w30, transparent)
+    bb 1px solid rgb(75,0,0)
+  ul
+    clearfix()
+    li
+      float left
+      a
+        d block
+        lh 48px
+        p 0 17px
+        b 1px solid transparent
+        bt none
+        bb none
+        &:hover
+          bc w20
+          background linear-gradient(top, w20, w10)
+      &.i18n
+        m 12px 0
+        float right
+        form select
+          p 0
+          box-shadow w15 0 0 15px
+
+#header
+  position relative
+  clearfix()
+  mb 56px
+
+  h1.logo a
+    d block
+    m 30px 0 0 -40px
+    h 179px
+    w 500px
+    ti -9999em
+    bg url(../i/logo.png) no-repeat
+
+  p.subtitle
+    f 18px/1.5 sans
+    ml 40px
+    w 500px
+
+  .nav
+    clear left
+    m 30px 0 0 40px
+    li
+      float left
+      mr 15px
+      .learn
+        d block
+        f 16px/44px sans
+        p 0 20px
+        bg b15
+        transition all .15s ease
+        border-radius 5px
+        &:hover
+          bg b20
+
+#code
+  absolute top 50px right 0
+  color white
+  p 40px 0 0
+  w 370px
+  h 310px
+  b 5px solid rgb(165,70,70)
+  background -webkit-gradient(radial, center center, 0, center center, 360, from(b50), to(b70))
+  background -moz-radial-gradient(b50, b70)
+  border-radius 175px 0 175px 0
+  box-shadow w15 0 0 100px
+  div
+    d block
+    f 14px/15px mono
+    p 0 0 0 90px
+    text-shadow none
+
+#code .keyword
+  color #f9bb00
+
+#code .comment
+  color #428bdd
+
+#code .string
+  color #00cc00
+
+#code .blank-line
+  lh 70%
+
+#content
+  m 0 auto 40px
+  clearfix()
+
+ul#posts
+  w 546px
+  float left
+  position relative
+  bg b15
+  mr 40px
+  p 10px 2px 2px
+  border-radius 10px
+  box-shadow w15 0 0 100px
+
+#posts:before, #posts:after
+  position absolute
+  left 2px
+  d block
+  z-index -1
+  h 80px
+  w 542px
+  content "\0020"
+  border-radius 8px
+
+#posts:before
+  top 2px
+  background linear-gradient(top, w30, transparent)
+
+#posts:after
+  bottom 2px
+  background linear-gradient(top, transparent, w20)
+
+#posts li
+  clear both
+  m 20px 0 0
+
+#posts li.abbr.post a
+  d block
+  min-h 40px
+  m 0 10px 10px
+  border-radius 10px
+
+#posts li.abbr.post a:hover
+  background linear-gradient(top, w20, w3 50%, transparent 50%, w10)
+  box-shadow b25 0 0 5px
+
+#posts li h3 a, #posts li.abbr .title
+  d block
+  f bold 24px/1 sans
+  p 10px 0 0
+  aa()
+
+#posts li.abbr .title
+  s 14px
+  lh 20px
+
+#posts li p, #posts li.abbr .author
+  d block
+  fw normal
+  p 0 40px 20px 80px
+
+#posts li .author
+  s 12px
+  lh 20px
+  color rgb(190,110,110)
+  text-shadow none
+
+#posts li.abbr .author
+  padding-bottom 10px
+  padding-left 70px
+
+#posts li p a
+  p 1px 5px
+  bg b20
+  border-radius 4px
+  transition all .15s ease
+
+  &:hover
+    bg b50
+
+#posts li .date
+  d block
+  h 40px
+  w 40px
+  m 10px 20px 0
+  float left
+  s 12px
+  background linear-gradient(top, b25, b15)
+  border-radius 3px
+
+#posts li.abbr .date
+  ml 10px
+
+#posts li .date span
+  d block
+  ta center
+
+#posts li .date span.month
+  fw normal
+  f 11px/1 sans
+  p 6px 0 4px
+
+#posts li .date span.day
+  f bold 14px/1 sans
+
+.nav.panels
+  w 360px
+  float left
+
+.nav.panels .panel
+  m 0 0 40px
+
+.section.heading h3
+  f bold 20px/36px sans
+  p 0 1px 5px
+  bb 2px solid b20
+
+.section.heading p
+  bt 2px solid w20
+  m 0 1px 30px
+  p 6px 0 0
+
+.nav.panels .panel.small.start
+  mr 10px
+
+.nav.panels .panel.small a
+  d block
+  p 6px 10px
+  fw normal
+  bb 1px solid rgb(80,0,0)
+  bt 1px solid w10
+  transition all .1s ease
+
+.nav.panels .panel.small li:last-of-type a
+  bb none
+  border-radius 0 0 4px 4px
+
+.nav.panels .panel.small a:hover
+  background linear-gradient(top, w15, w5)
+  bt 1px solid w20
+
+.nav.panels .participate
+  clear both
+
+.participate .squares li a, .projects li a
+  mr 10px
+
+.participate .squares
+  w 370px
+
+.projects
+  w 960px
+
+.nav.panels .panel.small, .squares a
+  d block
+  position relative
+  overflow hidden
+  w 171px
+  p 2px
+  float left
+  bg b15
+  border-radius 5px
+
+.participate .squares a
+  h 171px
+  m 0 0 20px
+
+.squares.projects a
+  w 178px
+  h 290px
+
+  &:hover:after
+    d block
+    absolute bottom -30px left -60px
+    z 0
+    content "\2192"
+    s 200px
+    lh 1
+    color w10
+    text-shadow none
+
+.panel.small h4, .squares .title
+  d block
+  p 6px 10px 0
+  f bold 14px/30px sans
+  bb 1px solid rgb(80,0,0)
+  background linear-gradient(top, w20, rgba(255,255,255,0) 60%, transparent)
+  border-radius 5px 5px 0 0
+  transition all .1s ease
+
+.projects li .title
+  s 16px
+  padding-top 8px
+
+.squares li .description
+  position relative
+  z-index 1
+  d block
+  bt 1px solid w10
+  p 6px 10px
+  fw normal
+  transition all .1s ease
+
+#projects-cnt
+  overflow hidden
+  m 0 auto 40px
+
+  h2
+    ta center
+    f bold 36px/70px sans
+    ls -1px
+    bb 2px solid b20
+
+  .projects
+    p 20px 0 0
+    bt 2px solid w20
+
+#bottom
+  s 12px
+  bg b15
+  p 20px 0 40px
+  bt 1px solid w10
