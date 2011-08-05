@@ -80,7 +80,7 @@ body
     h 179px
     w 500px
     ti -9999em
-    bg url(../i/logo.png) no-repeat
+    bg url(../images/logo.png) no-repeat
 
   p.subtitle
     f 18px/1.5 sans
@@ -135,6 +135,62 @@ body
 #content
   m 0 auto 40px
   clearfix()
+
+ul#downloads
+  w 100%
+  float left
+  position relative
+  bg b15
+  mr 40px
+  p 2px 10px 10px
+  border-radius 10px
+  box-shadow w15 0 0 100px
+
+#downloads:before, #posts:after
+  position absolute
+  left 2px
+  d block
+  z-index -1
+  h 80px
+  w 99.5%
+  content "\0020"
+  border-radius 8px
+
+#downloads:before
+  top 2px
+  background linear-gradient(top, w30, transparent)
+
+#downloads:after
+  bottom 2px
+  background linear-gradient(top, transparent, w20)
+
+#downloads li
+  clear both
+  m 20px 0 0
+
+#downloads li.abbr.download a
+  d block
+  min-h 40px
+  m 0 10px 10px
+  border-radius 10px
+
+#downloads h3
+  d block
+  f bold 24px/1 sans
+  p 10px 0 10px
+  aa()
+
+#downloads h4
+  d block
+  f bold 20px/1 sans
+  p 10px
+  aa()
+
+#downloads li p
+  d block
+  fw normal
+  p 0 10px 20px 10px
+
 
 ul#posts
   w 546px

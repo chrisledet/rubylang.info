@@ -1,0 +1,5 @@
+markdown: rdiscount
+permalink: /posts/:title
+auto: true
+rdiscount:
+  extensions: [smart]
