@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--
+  // Maintained by the Ruby Community at https://github.com/rubylang
+  // Design by Peng Zhong - http://nylira.com - http://twitter.com/zcpeng
+  -->
+  <title>{{ page.title }}</title>
+  <meta charset=utf-8 />
+  <link type="text/css" rel="stylesheet" href="../stylesheets/style.css" />
+  <!--[if IE 6]><link rel="gstylesheet" type="text/css" href="//universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen, projection" /><![endif]-->
+  <script src='http://code.jquery.com/jquery-1.6.2.min.js' type='text/javascript'></script>
+  <script src='../javascripts/app.js' type='text/javascript'></script>
+</head>
+
+<body>
+  <div class="nav main top">
+    <ul class="nav cnt">
+      <li><a href="/downloads.html">Downloads</a>
+      <li><a href="http://www.ruby-doc.org/">Documentation</a>
+      <li><a href="http://www.rubygems.org">RubyGems</a>
+      <li><a href="#">Community</a>
+      <li><a href="#">News</a>
+      <li><a href="#">Security</a>
+      <li><a href="#">About Ruby</a>
+      <li class="i18n">
+        <form>
+          <select>
+            <option>English</option>
+          </select>
+        </form>
+    </ul>
+  </div>
+  
+  <div id="header" class="cnt">
+    <h1 class="logo"><a href="/">Ruby</a></h1>
+    {% if page.code %}
+      {% include code.html %}
+    {% endif %}
+  </div>
+   
+  <div id="content" class="cnt">
+    {{ content }}
+  </div>
+  
+  <div class="nav main bot">
+    <ul class="cnt">
+      <li><a href="/downloads.html">Downloads</a>
+      <li><a href="http://www.ruby-doc.org/">Documentation</a>
+      <li><a href="http://www.rubygems.org">RubyGems</a>
+      <li><a href="#">Community</a>
+      <li><a href="#">News</a>
+      <li><a href="#">Security</a>
+      <li><a href="#">About Ruby</a>
+      <li class="i18n">
+        <form>
+          <select>
+            <option>English</option>
+          </select>
+        </form>
+    </ul>
+  </div>
+  
+  <div id="bottom">
+    <div class="cnt">
+      <p>Ruby is released under the <a href='/license.html'>Ruby License</a> and &copy; 2011 Yukihiro Matsumoto</p>
+      <p>
+        Design was beautifully done by <a href='http://nylira.com'>Peng Zhong</a>.
+        If you would like to contribute to the site in any way, please <a href='https://github.com/rubylang/rubylang.github.com'> 
+        fork us on Github</a>.</p>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -45,7 +45,7 @@ body h1,body h2,body h3,body h4,body h5,body h6{-webkit-font-smoothing:antialias
 #header{position:relative;zoom:1;margin-bottom:56px;}
 #header:before,#header:after{content:"";display:table}
 #header:after{clear:both}
-#header h1.logo a{display:block;margin:30px 0 0 -40px;height:179px;width:500px;text-indent:-9999em;background:url("../i/logo.png") no-repeat}
+#header h1.logo a{display:block;margin:30px 0 0 -40px;height:179px;width:500px;text-indent:-9999em;background:url("../images/logo.png") no-repeat}
 #header p.subtitle{font:18px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;margin-left:40px;width:500px}
 #header .nav{clear:left;margin:30px 0 0 40px;}
 #header .nav li{float:left;margin-right:15px;}
@@ -60,6 +60,15 @@ body h1,body h2,body h3,body h4,body h5,body h6{-webkit-font-smoothing:antialias
 #content{margin:0 auto 40px;zoom:1}
 #content:before,#content:after{content:"";display:table}
 #content:after{clear:both}
+ul#downloads{width:100%;float:left;position:relative;background:rgba(0,0,0,0.15);margin-right:40px;padding:2px 10px 10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-webkit-box-shadow:rgba(255,255,255,0.15) 0 0 100px;-moz-box-shadow:rgba(255,255,255,0.15) 0 0 100px;box-shadow:rgba(255,255,255,0.15) 0 0 100px}
+#downloads:before,#posts:after{position:absolute;left:2px;display:block;z-index:-1;height:80px;width:99.5%;content:"\0020";-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px}
+#downloads:before{top:2px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.3)), color-stop(1, transparent));background:-webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);background:linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%)}
+#downloads:after{bottom:2px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, rgba(255,255,255,0.2)));background:-webkit-linear-gradient(top, transparent 0%, rgba(255,255,255,0.2) 100%);background:-moz-linear-gradient(top, transparent 0%, rgba(255,255,255,0.2) 100%);background:linear-gradient(top, transparent 0%, rgba(255,255,255,0.2) 100%)}
+#downloads li{clear:both;margin:20px 0 0}
+#downloads li.abbr.download a{display:block;min-h:40px;margin:0 10px 10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}
+#downloads h3{display:block;font:bold 24px/1 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:10px 0 10px;-webkit-font-smoothing:antialiased}
+#downloads h4{display:block;font:bold 20px/1 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:10px;-webkit-font-smoothing:antialiased}
+#downloads li p{display:block;font-weight:normal;padding:0 10px 20px 10px}
 ul#posts{width:546px;float:left;position:relative;background:rgba(0,0,0,0.15);margin-right:40px;padding:10px 2px 2px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-webkit-box-shadow:rgba(255,255,255,0.15) 0 0 100px;-moz-box-shadow:rgba(255,255,255,0.15) 0 0 100px;box-shadow:rgba(255,255,255,0.15) 0 0 100px}
 #posts:before,#posts:after{position:absolute;left:2px;display:block;z-index:-1;height:80px;width:542px;content:"\0020";-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px}
 #posts:before{top:2px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.3)), color-stop(1, transparent));background:-webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);background:linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%)}
