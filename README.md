@@ -22,3 +22,7 @@ Ruby programming language.
   this is coming soon.
   
   3) Once you've made changes and you're satisfied, just push the changes to your fork and submit a pull request.
+
+### License
+  RubyLang.info is licensed under a
+  [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
