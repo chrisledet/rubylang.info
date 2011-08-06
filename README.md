@@ -5,18 +5,16 @@ developers. We are hosted on Github, where anyone can contribute to the site wit
 through unnecessary barriers. We strive to be the best possible resource for the 
 Ruby programming language.
 
-### Getting Started
+### Contributing
 
-  The setup is very easy. All is required in [Jekyll](http://jekyllrb.com/) to start contributing.
+  The setup is very straightforward. Only [Jekyll](http://jekyllrb.com/) is required to get started.
 
   1) Install Jekyll by running
   
       gem install jekyll
     
-  2) Run Jekyll in the source code directory. This will generate the necessary static files, just 
-  navigate to [http://localhost:4000](http://localhost:4000) to view the site.
-  
-      jekyll --server
+  2) Run `jekyll --server` in the source code directory. This will start Webrick, generate the static files, and will
+  watch for any changes. Navigate to [http://localhost:4000](http://localhost:4000) to view the site.
 
   Note: For styling, we are currently using [Stylus](http://learnboost.github.com/stylus/) but looking to migrate over
   to [Sass](http://sass-lang.com/) in the near future. Both are very similar and if you're familiar with any, 
