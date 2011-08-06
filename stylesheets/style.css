@@ -208,13 +208,12 @@ span.amp {
   background: #ffffe0;
 }
 a {
-  color: #fff;
-  font-weight: bold;
+  color: #bbf;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: #99f;
 }
 body {
   font-size: 14px;
