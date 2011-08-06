@@ -23,13 +23,7 @@
   
   <div class="nav main top">
     <ul class="nav cnt">
-      <li><a href="/downloads.html">Downloads</a>
-      <li><a href="http://www.ruby-doc.org/">Documentation</a>
-      <li><a href="http://www.rubygems.org">RubyGems</a>
-      <li><a href="#">Community</a>
-      <li><a href="#">News</a>
-      <li><a href="#">Security</a>
-      <li><a href="#">About Ruby</a>
+    {% include menu.html %}
     </ul>
   </div>
   
@@ -45,24 +39,19 @@
   </div>
   
   {% if page.top %}
-    {% include top.html %}
+    {% include top_projects.html %}
   {% endif %}
   
   <div class="nav main bot">
     <ul class="cnt">
-      <li><a href="/downloads.html">Downloads</a>
-      <li><a href="http://www.ruby-doc.org/">Documentation</a>
-      <li><a href="http://www.rubygems.org">RubyGems</a>
-      <li><a href="#">Community</a>
-      <li><a href="#">News</a>
-      <li><a href="#">Security</a>
-      <li><a href="#">About Ruby</a>
-      <li class="i18n">
-        <form>
-          <select>
-            <option>English</option>
-          </select>
-        </form>
+    {% include menu.html %}
+    <li class="i18n">
+      <form>
+        <select>
+          <option>English</option>
+        </select>
+      </form>
+    </li>
     </ul>
   </div>
   
