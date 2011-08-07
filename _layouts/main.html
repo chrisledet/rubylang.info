@@ -16,38 +16,38 @@
 
 
 <body>
-  
+
   <a href="http://github.com/rubylang/rubylang.github.com">
     <img class='github' src="images/github_banner.png" alt="Fork me on GitHub">
   </a>
-  
+
   <div class="nav main top">
     <ul class="nav cnt">
       <li><a href="/downloads.html">Downloads</a>
       <li><a href="http://www.ruby-doc.org/">Documentation</a>
       <li><a href="http://www.rubygems.org">RubyGems</a>
       <li><a href="#">Community</a>
-      <li><a href="#">News</a>
+      <li><a href="http://rubyflow.com">News</a>
       <li><a href="#">Security</a>
       <li><a href="#">About Ruby</a>
     </ul>
   </div>
-  
+
   <div id="header" class="cnt">
     <h1 class="logo"><a href="/">Ruby</a></h1>
     {% if page.code %}
       {% include code.html %}
     {% endif %}
   </div>
-   
+
   <div id="content" class="cnt">
     {{ content }}
   </div>
-  
+
   {% if page.top %}
     {% include top.html %}
   {% endif %}
-  
+
   <div class="nav main bot">
     <ul class="cnt">
       <li><a href="/downloads.html">Downloads</a>
@@ -65,14 +65,14 @@
         </form>
     </ul>
   </div>
-  
+
   <div id="bottom">
     <div class="cnt">
-      <p>Ruby is released under the <a href='http://ruby-lang.org/en/LICENSE.txt'>Ruby License</a> 
+      <p>Ruby is released under the <a href='http://ruby-lang.org/en/LICENSE.txt'>Ruby License</a>
         and &copy; 2011 Yukihiro Matsumoto</p>
 
       <p>Design was beautifully done by <a href='http://nylira.com'>Peng Zhong</a>.
-        If you would like to contribute to the site in any way, please <a href='https://github.com/rubylang/rubylang.github.com'> 
+        If you would like to contribute to the site in any way, please <a href='https://github.com/rubylang/rubylang.github.com'>
         fork us on Github</a>.</p>
 
       <p>
@@ -84,6 +84,6 @@
   </div>
 
 
-{% include gauges.html %}  
+{% include gauges.html %}
 </body>
 </html>
