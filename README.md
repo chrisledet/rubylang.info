@@ -1,9 +1,7 @@
 ## RubyLang.info
 
-RubyLang.info is a community driven web site, dedicated to helping both new and experienced Ruby 
-developers. We are hosted on Github, where anyone can contribute to the site without going 
-through unnecessary barriers. We strive to be the best possible resource for the 
-Ruby programming language.
+RubyLang.info was a community driven web site, dedicated to helping both new and experienced Ruby 
+developers.
 
 ### Contributing
 
